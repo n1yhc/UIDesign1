@@ -1,0 +1,266 @@
+body {
+	background: #cccccc;
+}
+
+#align {
+	display: flex;
+  align-items: center;
+  justify-content: center;	
+  height: 100vh;
+}
+
+#stage {
+	width: 900px;
+	height: 556px;
+	margin: auto;
+	background: white;
+	position: relative;
+}
+
+
+#table {
+	width: 900px;
+	height: 236px;
+	top: 323px;
+  left: 0px;
+	background: rgb(230 213 200);
+	position: absolute;
+	z-index: 0;
+}
+
+
+#head {
+	width: 145px;
+	height: 145px;
+	background: #ffec48;
+	border-radius: 150px;
+  position: absolute;
+  top: 153px;
+  left: 210px;
+  z-index:12;
+}
+
+#cap {
+	width:90px;
+	height: 30px;
+	background: #f5a123;
+	border-radius: 40px;
+  position: absolute;
+  top: 190px;
+  left: 200px;
+  z-index:20;
+}
+
+#face {
+	width: 85px;
+	height: 100px;
+	background: #fff5df;
+	border-radius: 40px;
+  position: absolute;
+  top: 190px;
+  left: 210px;
+  z-index:18;
+	border: 2px solid #ecd6c0;
+}
+
+#eye1 {
+	width: 25px;
+	height: 40px;
+	background: #ffffff;
+	border-radius: 40px;
+  position: absolute;
+  top: 225px;
+  left: 235px;
+  z-index:19;
+	border: 2px solid #ecd6c0;
+}
+
+#eye2 {
+	width: 18px;
+	height: 28px;
+	background: #6cd0e6;
+	border-radius: 40px;
+  position: absolute;
+  top: 232px;
+  left: 234px;
+  z-index:20;
+}
+
+#eye3 {
+	width: 13px;
+	height: 22px;
+	background: #0f0f0f;
+	border-radius: 40px;
+  position: absolute;
+  top: 235px;
+  left: 234px;
+  z-index:20;
+}
+
+#nose {
+	width: 40px;
+	height: 40px;
+	background: #fff5e0;
+	border-radius: 40px;
+  position: absolute;
+  top: 240px;
+  left: 190px;
+  z-index:22;
+	border: 2px solid #ecd6c0;
+}
+
+#mustache {
+	width: 40px;
+	height: 20px;
+	background: #0f0f0f;
+	border-radius: 40px;
+  position: absolute;
+	transform: rotate(-15deg);
+	transform-origin: top left; /* 회전 중심 설정 */
+  top: 275px;
+  left: 212px;
+  z-index:21;
+}
+
+#body {
+	width: 85px;
+	height: 115px;
+	background: #ffec48;
+	border-radius: 30px;
+  position: absolute;
+  top: 253px;
+  left: 250px;
+  z-index:12;
+}
+
+#belly {
+	width: 65px;
+	height: 85px;
+	background: #fcfbf2;
+	border-radius: 30px;
+  position: absolute;
+  top: 276px;
+  left: 230px;
+  z-index:15;
+	border: 2px solid #d6d6d6;
+}
+
+#leftfoot {
+	width: 55px;
+	height: 65px;
+	background: #f6f8f6;
+	border-radius: 30px;
+  position: absolute;
+  top: 308px;
+  left: 230px;
+  z-index:20;
+	border: 2px solid #d6d6d6;
+}
+
+#rightfoot {
+	width: 55px;
+	height: 63px;
+	background: #f1f1f1;
+	border-radius: 30px;
+  position: absolute;
+  top: 308px;
+  left: 200px;
+  z-index:19;
+	border: 2px solid #d6d6d6;
+}
+
+#pocari {
+	width: 95px;
+	height: 9;
+
+      border-top:190px solid #2943ec;
+      border-left: 0px solid transparent;
+      border-right: 0px solid transparent;
+	  border-radius: 10px;
+	position: absolute;
+	top: 173px;
+	left: 320px;
+	z-index: 1;
+}
+
+.text {
+	position: absolute;
+	top: 200px;
+	left: 385px;
+	color: rgb(255 255 255);
+	font-size: 40px;
+	font-weight: bold;
+	transform: rotate(90deg);
+	transform-origin: top left; /* 회전 중심 설정 */
+	z-index: 9;
+  }
+
+#ramen {
+	width: 90px;
+      height: 0;
+      border-top: 160px solid #f94545;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+	position: absolute;
+	top: 203px;
+	left: 530px;
+	z-index: 5;
+
+	/* uncomment to add keyframe animation */
+	/* animation: spin 2s infinite; */
+
+}
+
+#apple {
+	width: 120px;
+	height: 120px;
+	background: #cf1343;
+	border-radius: 150px;
+	top: 243px;
+	left: 470px;
+	position: absolute;
+}
+
+#cup {
+	width: 75px;
+      height: 0;
+      border-top: 110px solid #cbcbcb;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+	position: absolute;
+	top: 253px;
+	left: 390px;
+	z-index:9;
+
+	/* uncomment for css transitions */
+	/* transition: all 400ms ease; */
+}
+
+
+/* animations */
+
+/*
+#clip:hover {
+	transform: rotate(1200deg);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes move {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(100px);
+  }
+}
+
+*/
